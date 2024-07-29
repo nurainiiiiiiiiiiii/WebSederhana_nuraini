@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link href="aini.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Aini</a>
+            </div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#audio-video">Audio Video</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#berita">Berita</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="beranda" class="background">
+            <div class="posisi">
+                <p><strong>Nur Aini Maswain</strong></p>
+            </div>
+        </div>
+        <div id="profil" class="background">
+            <div style="width: 70%; margin: auto; border: 5px solid #000000; padding: 40px; box-shadow: 2px 2px 12px hsl(0, 0%, 100%);">
+                <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+                    Profil Lengkap Saya
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex: 1; border: 1px solid hsl(0, 100%, 100%); height: 300px; display: flex; align-items: center; justify-content: center; margin-right: 20px; overflow: hidden;">
+                        <img src="aini.jpg" alt="Foto Profil" style="width: 100%; height: auto;">
+                    </div>
+                    <div style="flex: 2;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Kampus :</td>
+                                <td>Politeknik Negeri Fakfak</td>
+                            </tr>
+                            <tr>
+                                <td>NIM :</td>
+                                <td>16323006</td>
+                            </tr>
+                            <tr>
+                                <td>Nama :</td>
+                                <td>Nur Aini Maswain</td>
+                            </tr>
+                            <tr>
+                                <td>Prodi :</td>
+                                <td>D3 Manajemen Informatika</td>
+                            </tr>
+                            <tr>
+                                <td>Kelas :</td>
+                                <td>1A</td>
+                            </tr>
+                            <tr>
+                                <td>JK :</td>
+                                <td>Perempuan</td>
+                            </tr>
+                            <tr>
+                                <td>Gol Darah :</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Usia :</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>Hobi :</td>
+                                <td>Badminton</td>
+                            </tr>
+                            <tr>
+                                <td>Ttl :</td>
+                                <td>Fakfak 06 Juni 2006</td>
+                            </tr>
+                            <tr>
+                                <td>Alamat :</td>
+                                <td>Jln. Latonde RT.03</td>
+                            </tr>
+                            <tr>
+                                <td>Status :</td>
+                                <td>Mahasiswi</td>
+                            </tr>
+                            <tr>
+                                <td>Agama :</td>
+                                <td>Islam</td>
+                            </tr>
+                            <tr>
+                                <td>Asal sekolah :</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Cita-cita :</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="audio-video" class="background media">
+            <div class="posisi">
+                <h2>Audio Video</h2>
+                <video controls>
+                    <source src="badmintonvd.mp4" type="video/mp4">
+                </video>
+                <figure>
+                    <audio controls>
+                        <source src="sad.mp3" type="audio/mp4">
+                    </audio>
+                    <figcaption>Judul Lagu: Dead Bed</figcaption>
+                </figure>
+                
+            </div>
+        </div>
+        <div id="tentang" class="background">
+            <div class="posisi">
+                <h1>Tentang</h1>
+                <p>Bagian ini memuat tentang saya sabagai penulis.</p>
+                <p align="center">Dimana saya adalah mahasiswi di Politeknik Negeri Fakfak, dimana saya tengah fokus mengembangkan keterampilan di bidang teknologi dan pemrograman. Saya sangat antusias mengikuti perkembangan teknologi yang terus maju dan pesat saat ini.</p>
+            </div>
+        </div>
+        <div id="berita" class="background news">
+            <div class="posisi">
+                <h2>Pebulutangkis China Zhang Zhi Jie Meninggal, Dokter Jantung Ungkap Kemungkinannya</h2>
+                <div class="article">
+                    <h3></h3>
+                    <iframe src="https://health.detik.com/kebugaran/d-7417094/pebulutangkis-china-zhang-zhi-jie-meninggal-dokter-jantung-ungkap-kemungkinannya" width="70%" height="470px" frameborder="5"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#audio-video">Audio Video</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#berita">Berita</a></li>
+            </ul>
+            <p>&copy; Aini (2024).</p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
